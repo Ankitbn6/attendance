@@ -192,6 +192,12 @@ function App() {
       time:"",
       present:false,
       id:31
+    },
+    {
+      name:"Anuj pr",
+      time:"",
+      present:false,
+      id:32
     }
 ]
   return (

@@ -5,6 +5,7 @@ const AttendanceItem = ({ele,list,count,setCount,storeLocally}) => {
     const [submitted,setsubmitted]=useState(false);
     const [currentHour,setCurrentHour]=useState("");
     const [currentMinute,setCurrentMinute]=useState("");
+    const clickedStyle=clicked?{backgroundColor:"rgb(50, 250, 0)"}:{}
     const setTime=(ele)=>{
         if(!clicked)
         {
@@ -29,7 +30,7 @@ const AttendanceItem = ({ele,list,count,setCount,storeLocally}) => {
       storeLocally();
     }
   return (
-    <div onClick={setTime}  className='bg-red-200 m-auto text-center flex items-center  justify-between px-3 gap-1 text-lg py-1 my-1 '>
+    <div onClick={setTime} style={clickedStyle} className='bg-red-200 m-auto text-center flex items-center  justify-between px-3 gap-1 text-lg py-2 my-1 '>
       <h1 className='text-lg'>{ele.name}</h1>
       {clicked && !submitted && (
       <div className='flex items-center justify-center gap-2'>

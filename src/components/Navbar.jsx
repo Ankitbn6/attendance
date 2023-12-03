@@ -5,9 +5,9 @@ import AttendanceHistory from './AttendanceHistory'
 
 const Navbar = () => {
   return (
-    <div className='text-2xl flex justify-around items-center gap-8 h-[45px]'>
-      <Link to={"/"} className='text-purple-900 '>New </Link>
-      <Link to={"/history"} className='text-purple-900 '> History</Link>
+    <div className='text-2xl flex justify-around items-center gap-8 h-[45px] bg-purple-600'>
+      <Link to={"/"} ><div className='text-white px-4 py-1 rounded-lg'>New</div> </Link>
+      <Link to={"/history"} ><div className='text-white px-4 py-1  rounded-lg'>History</div> </Link>
     </div>
   )
 }
