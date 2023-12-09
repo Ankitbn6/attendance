@@ -30,7 +30,7 @@ const AttendanceItem = ({ele,list,count,setCount,storeLocally}) => {
       storeLocally();
     }
   return (
-    <div onClick={setTime} style={clickedStyle} className='bg-red-200 m-auto text-center flex items-center  justify-between px-3 gap-1 text-lg py-2 my-1 '>
+    <div onClick={setTime} style={clickedStyle} className='bg-[rgb(255,230,0)] m-auto text-center flex items-center  justify-between px-3 gap-1 text-lg py-2 my-1 '>
       <h1 className='text-lg'>{ele.name}</h1>
       {clicked && !submitted && (
       <div className='flex items-center justify-center gap-2'>
