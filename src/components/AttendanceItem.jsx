@@ -5,7 +5,7 @@ const AttendanceItem = ({ele,list,count,setCount,storeLocally}) => {
     const [submitted,setsubmitted]=useState(false);
     const [currentHour,setCurrentHour]=useState("");
     const [currentMinute,setCurrentMinute]=useState("");
-    const clickedStyle=clicked?{backgroundColor:"rgb(50, 250, 0)"}:{}
+    const clickedStyle=clicked?{backgroundColor:"rgb(255,180,0)"}:{}
     const setTime=(ele)=>{
         if(!clicked)
         {
@@ -35,8 +35,8 @@ const AttendanceItem = ({ele,list,count,setCount,storeLocally}) => {
       {clicked && !submitted && (
       <div className='flex items-center justify-center gap-2'>
       <div className='flex items-center'>
-      <input className='w-[35px] p-1 bg-transparent text-2xl' value={currentHour} onChange={(e)=>{setCurrentHour(e.target.value)}} />:
-      <input className='w-[35px] p-1 bg-transparent text-2xl' value={currentMinute} onChange={(e)=>{setCurrentMinute(e.target.value)}} />
+      <input className='w-[35px] p-1 bg-transparent text-2xl outline-none' value={currentHour} onChange={(e)=>{setCurrentHour(e.target.value)}} />:
+      <input className='w-[35px] p-1 bg-transparent text-2xl outline-none' value={currentMinute} onChange={(e)=>{setCurrentMinute(e.target.value)}} />
       </div>
       <div className='flex items-center gap-4'>
       <div className='rounded-full  w-[30px] h-[30px] flex items-center justify-center border-2 border-black' onClick={submit}>✔</div>

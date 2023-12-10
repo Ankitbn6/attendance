@@ -9,7 +9,7 @@ const toggleClicked=()=>{
 }
   return (
     <div>
-      {date && <div onClick={toggleClicked} className='bg-[rgb(20,180,0)] text-white flex items-center justify-center m-1 mb-0 p-2 text-2xl rounded-lg'>{date}</div>}
+      {date && <div onClick={toggleClicked} className='bg-[rgb(255,230,0)] text-black flex items-center justify-center m-1 mb-0 p-2 text-2xl rounded-lg'>{date}</div>}
       <div >{clicked && data && data.map((ele)=>((ele.present)?<HistoryItem key={ele.id} ele={ele}/>:null))}</div>
     </div>
   )

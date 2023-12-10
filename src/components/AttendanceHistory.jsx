@@ -9,7 +9,7 @@ const AttendanceHistory = ({list}) => {
   },[])
   return (
     <div>
-      {/* <h1 className='bg-[rgb(20,100,0)] m-auto  text-white text-center text-2xl p-1 '>History</h1> */}
+      <h1 className='bg-[rgb(255,110,0)] m-auto  text-white text-center text-2xl p-1 '>History</h1>
       {prevdata.map((ele)=><HistoryDateAccordian data1={ele}  key={ele.date}/>)}
     </div>
   )

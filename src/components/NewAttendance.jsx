@@ -45,7 +45,7 @@ const NewAttendance = ({list}) => {
   },[])
   return (
     <div>
-      {/* <h1 className='bg-[rgb(255,110,0)] m-auto text-white text-center text-2xl p-1'>Take Attendance</h1> */}
+      <h1 className='bg-[rgb(255,110,0)] m-auto text-white text-center text-2xl p-1'>Take Attendance</h1>
       {data.map((ele)=>((!ele.present)?<AttendanceItem key={ele.id} storeLocally={storeLocally} count={count} setCount={setCount} list={data} ele={ele}/>:null))}
     </div>
   )
