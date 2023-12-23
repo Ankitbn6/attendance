@@ -39,7 +39,7 @@ const AttendanceItem = ({ele,list,count,setCount,storeLocally}) => {
       <input className='w-[35px] p-1 bg-transparent text-2xl outline-none' value={currentMinute} onChange={(e)=>{setCurrentMinute(e.target.value)}} />
       </div>
       <div className='flex items-center gap-4'>
-      <div className='rounded-full  w-[30px] h-[30px] flex items-center justify-center border-2 border-black' onClick={submit}>✔</div>
+      <div className='rounded-full  w-[30px] h-[30px] ml-2 flex items-center justify-center border-2 border-black' onClick={submit}>✔</div>
       <div className='rounded-full  w-[30px] h-[30px] flex items-center justify-center border-2 border-black' onClick={()=>{setClicked(false)}}>X</div>
       </div>
       </div>
