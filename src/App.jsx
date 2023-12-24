@@ -4,6 +4,7 @@ import Navbar from './components/Navbar'
 import NewAttendance from './components/NewAttendance'
 import AttendanceHistory from './components/AttendanceHistory'
 import Profiles from './components/Profiles'
+import Edit from './components/Edit'
 
 function App() {
 
@@ -208,6 +209,7 @@ function App() {
         <Route path='/' element={<NewAttendance list={list}/>}></Route>
         <Route path='/history' element={<AttendanceHistory list={list} />}></Route>
         <Route path='/profiles' element={<Profiles list={list} />}></Route>
+        <Route path='/edit' element={<Edit/>}></Route>
       </Routes>
     </div>
   )
