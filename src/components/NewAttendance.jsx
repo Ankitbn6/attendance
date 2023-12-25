@@ -19,8 +19,8 @@ const NewAttendance = ({list}) => {
       {
         prevData.splice(0,1);
         prevData.unshift(item);
-        if(prevData.length>7)
-        prevData.splice(7,prevData.length-1);
+        if(prevData.length>10)
+        prevData.splice(10,prevData.length-1);
         localStorage.setItem("prevAttendanceItems",JSON.stringify(prevData));
       }
       else{

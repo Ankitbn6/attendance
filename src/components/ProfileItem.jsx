@@ -38,10 +38,10 @@ const ProfileItem = ({ele,data}) => {
     <div>
       <div className='bg-[rgb(255,230,0)] text-black mt-2 mb-2 p-[6px] rounded-3xl text-center w-[96%] m-auto flex items-center justify-between pl-4 pr-4' onClick={()=>{setClicked((prev)=>!prev);getPersonalData()}}><p className='text-2xl'>{ele.name}</p><p>{clicked?'▲':'▼'}</p></div>
       {clicked && <div className='overflow-scroll no-scrollbar p-1'>
-        <table className='overflow-scroll m-auto ml-2 '  >
-            <thead>
+        <table className='overflow-scroll m-auto ml-2  '  >
+            <thead >
             <tr>
-                {dateList.map((elem,index)=><th className='border-2 border-black p-2 ' key={index}>{elem}</th>)}
+                {dateList.map((elem,index)=><th className='border-2 border-black p-2  ' key={index}>{elem}</th>)}
             </tr>
             </thead>
             <tbody>

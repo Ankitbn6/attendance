@@ -35,10 +35,10 @@ const Edit = () => {
       </div>
       </div>:null)}
       {clicked && 
-      <div className=' absolute w-[270px] md:w-[350px] h-[150px] left-0 right-0 top-[200px]  shadow-2xl ml-auto mr-auto bg-blue-50 rounded-lg p-2 '>
-        <h2 className='mt-3 mx-2 text-center'>Are you sure you want to mark</h2>
-        <h2 className='text-center'><span className='text-xl  font-bold  bold text-red-500'>{itemToDelete.name}</span> as absent ?</h2>
-        <div className='flex items-center justify-around mt-8'>
+      <div className=' fixed w-[300px]  md:w-[350px] h-[160px] left-0 right-0 top-[250px]  shadow-2xl ml-auto mr-auto bg-blue-50 rounded-lg p-2 '>
+        <h2 className='mt-3 mx-2 text-center text-blue-500'>Are you sure you want to mark</h2>
+        <h2 className='text-center text-blue-500'><span className='text-xl  font-bold  bold text-red-500'>{itemToDelete.name}</span> as absent ?</h2>
+        <div className='flex items-center justify-around mt-8 '>
         <button onClick={()=>{setClicked(false)}} className='border-2  active:text-black active:border-black border-green-600 p-1 px-3 text-xl text-green-700 rounded-xl'>Cancel</button>
         <button onClick={()=>{deleteItem(itemToDelete.id);setClicked(false)}} className='border-2 active:text-black active:border-black border-red-500 p-1 px-3 text-xl text-red-700 rounded-xl'>OK</button></div>
       </div>}
