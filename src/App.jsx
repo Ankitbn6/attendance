@@ -15,12 +15,12 @@ function App() {
         present:false,
         id:1
     },
-    {
-        name:"Santosh pr",
-        time:"",
-        present:false,
-        id:2
-    },
+    // {
+    //     name:"Santosh pr",
+    //     time:"",
+    //     present:false,
+    //     id:2
+    // },
     {
         name:"Dhiraj pr",
         time:"",
@@ -63,12 +63,12 @@ function App() {
       present:false,
       id:9
     },
-    {
-      name:"Abhishek pr",
-      time:"",
-      present:false,
-      id:10
-    },
+    // {
+    //   name:"Abhishek pr",
+    //   time:"",
+    //   present:false,
+    //   id:10
+    // },
     {
       name:"Rahul pr",
       time:"",
