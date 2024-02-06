@@ -26,7 +26,7 @@ const AttendanceItem = ({ele,list,count,setCount,storeLocally}) => {
       setClicked(false);
       setsubmitted(true);
       setCount((prev)=>prev+1);
-      localStorage.setItem("AllAttendTime",JSON.stringify(prList))
+      localStorage.setItem("AllAttendTime1",JSON.stringify(prList))
       storeLocally();
     }
   return (

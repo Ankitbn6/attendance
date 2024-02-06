@@ -2,15 +2,15 @@ import React, { useContext, useEffect, useState } from 'react'
 import AttendanceItem from './AttendanceItem'
 
 const NewAttendance = ({list}) => {
-  let prevData=JSON.parse(localStorage.getItem("prevAttendanceItems"))||[];
-  const [data,setData]=useState(JSON.parse((localStorage.getItem("AllAttendTime")))||list);
+  let prevData=JSON.parse(localStorage.getItem("prevAttendanceItems1"))||[];
+  const [data,setData]=useState(JSON.parse((localStorage.getItem("AllAttendTime1")))||list);
   const [count,setCount]=useState(0);
   const storeLocally=()=>{
     let mydate=new Date();
     let item={
       id:mydate.toLocaleTimeString(),
       date:mydate.toDateString(),
-      data:JSON.parse(localStorage.getItem("AllAttendTime"))||list
+      data:JSON.parse(localStorage.getItem("AllAttendTime1"))||list
     }
     
     if(JSON.parse(localStorage.getItem("AllAttendTime")))
@@ -21,11 +21,11 @@ const NewAttendance = ({list}) => {
         prevData.unshift(item);
         if(prevData.length>10)
         prevData.splice(10,prevData.length-1);
-        localStorage.setItem("prevAttendanceItems",JSON.stringify(prevData));
+        localStorage.setItem("prevAttendanceItems1",JSON.stringify(prevData));
       }
       else{
         prevData.unshift(item);
-        localStorage.setItem("prevAttendanceItems",JSON.stringify(prevData));
+        localStorage.setItem("prevAttendanceItems1",JSON.stringify(prevData));
       }
     }
   }

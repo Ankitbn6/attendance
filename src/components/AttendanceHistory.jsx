@@ -5,9 +5,9 @@ import Edit from './Edit';
 import { NavLink } from 'react-router-dom';
 
 const AttendanceHistory = ({list}) => {
-  const [prevdata,setprevData]=useState(JSON.parse(localStorage.getItem("prevAttendanceItems"))||[]);
+  const [prevdata,setprevData]=useState(JSON.parse(localStorage.getItem("prevAttendanceItems1"))||[]);
   useEffect(()=>{
-    setprevData(JSON.parse(localStorage.getItem("prevAttendanceItems"))||list)
+    setprevData(JSON.parse(localStorage.getItem("prevAttendanceItems1"))||list)
   },[])
   return (
     <div>

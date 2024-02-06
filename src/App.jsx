@@ -171,18 +171,18 @@ function App() {
       present:false,
       id:27
     },
-    {
-      name:"Keshab pr",
-      time:"",
-      present:false,
-      id:28
-    },
-    {
-      name:"Krishna pr",
-      time:"",
-      present:false,
-      id:29
-    },
+    // {
+    //   name:"Keshab pr",
+    //   time:"",
+    //   present:false,
+    //   id:28
+    // },
+    // {
+    //   name:"Krishna pr",
+    //   time:"",
+    //   present:false,
+    //   id:29
+    // },
     {
       name:"Anant pr",
       time:"",
@@ -200,6 +200,12 @@ function App() {
       time:"",
       present:false,
       id:32
+    },
+    {
+      name:"Rohit pr",
+      time:"",
+      present:false,
+      id:33
     }
 ]
   return (

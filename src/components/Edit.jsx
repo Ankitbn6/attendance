@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react'
 import Modal from 'react-modal';
 
 const Edit = () => {
-    const [data,setData]=useState(JSON.parse(localStorage.getItem("AllAttendTime")));
+    const [data,setData]=useState(JSON.parse(localStorage.getItem("AllAttendTime1")));
     const [clicked,setClicked]=useState(false);
     const [itemToDelete,setItemToDelete]=useState({});
     // useEffect(()=>{
@@ -19,7 +19,7 @@ const Edit = () => {
                 return item;
             }
         })
-        localStorage.setItem("AllAttendTime",JSON.stringify(newList));
+        localStorage.setItem("AllAttendTime1",JSON.stringify(newList));
         setData(newList)
     }
   return (

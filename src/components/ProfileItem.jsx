@@ -4,7 +4,7 @@ const ProfileItem = ({ele,data}) => {
     const [clicked,setClicked]=useState(false)
     const [personalTime,setPersonalTime]=useState([])
     const [dateList,setDateList]=useState([]);
-    const [prevData,setPrevData]=useState(JSON.parse(localStorage.getItem("prevAttendanceItems"))||[]);
+    const [prevData,setPrevData]=useState(JSON.parse(localStorage.getItem("prevAttendanceItems1"))||[]);
     // useEffect(()=>{
     //     setPrevData(JSON.parse(localStorage.getItem("prevAttendanceItems")));
     // },[])
@@ -41,12 +41,12 @@ const ProfileItem = ({ele,data}) => {
         <table className='overflow-scroll m-auto ml-2  '  >
             <thead >
             <tr>
-                {dateList.map((elem,index)=><th className='border-2 border-black p-2  ' key={index}>{elem}</th>)}
+                {dateList?.map((elem,index)=><th className='border-2 border-black p-2  ' key={index}>{elem}</th>)}
             </tr>
             </thead>
             <tbody>
             <tr>
-                {personalTime.map((elem,index)=><td className='border-2 border-black p-2 ' key={index}>{elem}</td>)}
+                {personalTime?.map((elem,index)=><td className='border-2 border-black p-2 ' key={index}>{elem}</td>)}
             </tr>
             </tbody>
         </table>
